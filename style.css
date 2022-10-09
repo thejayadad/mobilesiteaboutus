@@ -1,0 +1,156 @@
+
+*, *::before, *::after {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+  }
+
+  body {
+    background:  #FBFEFD;
+    color: #a6a6a6;
+    line-height: 1.6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh auto 15vh;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  a {
+    text-decoration: none;
+  }
+header{
+    grid-column:  1 /2;
+    grid-row: 1 / 2;
+}
+
+nav {
+    max-width: 960px;
+    width: 90%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.nav_item{
+    margin-bottom: 1rem;
+}
+.nav_link, .nav_logo, .nav_toggle{
+    color: #a6a6a6;
+
+}
+.nav_logo:hover{
+    color: #a6a6a6;
+
+}
+.nav_link{
+    transition: .3s;
+}
+.nav_toggle{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .nav_menu{
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      padding: 1.5rem 0 1rem;
+      text-align: center;
+      background:  #FBFEFD;
+      transition: .2s;
+      box-shadow: 0 4px 4px rgba(0,0,0,.1);
+      border-radius: 0 0 1rem 1rem;
+      z-index: 1;
+      cursor: pointer;
+    }
+ }
+  .show-menu{
+    top: 3rem;
+  }
+
+  .active-link{
+    color: #a6a6a6;
+  }
+
+
+/*Home Section start */
+img {
+    max-width: 100%;
+    height: auto;
+}
+.bd-grid{
+    display: grid;
+    gap: 1.5rem;
+  }
+
+.bd-container{
+    max-width: 960px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: calc(100% - 2rem);
+}
+.home_container{
+    height: calc(100 - 3rem);
+    align-content: center;
+    text-align: center;
+}
+.home_img{
+    width: 300px;
+    justify-self: center;
+}
+.home_title{
+    font-size: 2.2rem;
+    color: #a6a6a6;
+    margin-bottom: 1rem;
+}
+.home_subtitle{
+    font: 1.5rem;
+    color: orange;
+    margin-bottom: .5rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: #a6a6a6;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    transition: .2s;
+    color: white;
+}
+.button:hover{
+    background: orange;
+}
+
+/*Home Section end */
+
+
+/*About Section Start*/
+
+.section {
+    padding: 4rem 0 2rem;
+}
+.about_text{
+    text-align: center;
+    font-size: 1.1rem;
+}
+.about_info{
+    padding: 1rem;
+    color: orange;
+}
+
+/*About Section End*/
+
+
+
+
+footer{
+    background: blue;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+
+}
